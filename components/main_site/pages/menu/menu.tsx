@@ -7,7 +7,7 @@ export default function Menu() {
   const menu: MenuT = getMenu()
 
   return (
-    <div className="bg-hongo-olivedrab-50 pb-[1200]">
+    <div className="bg-hongo-olivedrab-50 pb-[800px]">
       {/*
        * --------------------------------------
        *  Hero section
