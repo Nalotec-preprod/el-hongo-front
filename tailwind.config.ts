@@ -75,7 +75,7 @@ export default {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
       backgroundImage: {
-        heroBg: "url('/images/restaurant02.jpg')",
+        heroBg: "url('/images/hongo_panoramico_02.webp')",
         heroBlackOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)",
         menuBlackOverlay:
