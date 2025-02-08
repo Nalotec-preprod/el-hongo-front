@@ -1,7 +1,7 @@
 import { getMenu } from "@/actions/menu"
 import PagesHero from "../hero"
 import { yellowtail } from "@/components/ui/fonts"
-import { DishCategoryT, MenuT } from "@/types/menu"
+import { MenuT } from "@/types/menu"
 import DishCategorySection from "./menuDishCategoryCard"
 
 export default function Menu() {
