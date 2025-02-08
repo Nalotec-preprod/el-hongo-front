@@ -14,7 +14,10 @@ export default function Slide1() {
       </div>
       <p className={`${yellowtail.className}`}>y centro cultural</p>
       <div className="mt-4 rounded-md border border-white bg-opacity-10 p-2">
-        <Link href="/menu" className="z-0 block h-full w-full uppercase">
+        <Link
+          href="/menu"
+          className="z-0 block h-full w-full bg-headerOverlay uppercase"
+        >
           nuestro men&uacute;
         </Link>
       </div>

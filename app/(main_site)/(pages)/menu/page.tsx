@@ -1,7 +1,5 @@
+import Menu from "@/components/main_site/pages/menu/menu"
+
 export default function MenuPage() {
-  return (
-    <div>
-      <div></div>
-    </div>
-  )
+  return <Menu />
 }

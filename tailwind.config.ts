@@ -75,13 +75,13 @@ export default {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
       backgroundImage: {
-        heroBg: "url('/images/restaurant02.jpg')",
+        heroBg: "url('/images/restaurant05.jpg')",
         heroBlackOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)",
         headerOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%)",
         menuBlackOverlay:
-          "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.55) 100%)",
+          "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%)",
       },
     },
   },
