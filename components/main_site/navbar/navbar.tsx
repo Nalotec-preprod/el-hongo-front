@@ -5,7 +5,11 @@ import { Menu } from "lucide-react"
 import { NavbarLinkT } from "@/types/ui"
 import { useState } from "react"
 
-export default function Navbar() {
+interface NavbarProps {
+  variant?: string
+}
+
+export default function Navbar({ variant }: NavbarProps) {
   const navbarLinks: NavbarLinkT[] = [
     {
       name: "inicio",
@@ -43,14 +47,26 @@ export default function Navbar() {
     }
   }
 
+  console.log("Variant: ", variant)
+
   return (
-    <div className="flex h-full items-center">
-      <button type="button" className="z-10 md:hidden" onClick={handleShowMenu}>
+    <div className={`flex h-full items-center`}>
+      <button
+        type="button"
+        className="absolute right-2 top-2/4 z-20 -translate-y-2/4 transition md:hidden"
+        onClick={handleShowMenu}
+      >
         <Menu size={36} className="font-medium text-gray-200" />
       </button>
 
       <ul
-        className={`absolute -top-2 right-0 w-full origin-top animate-open-menu items-center justify-center gap-4 rounded-b-xl bg-menuBlackOverlay pb-6 pt-[60px] font-medium text-gray-200 backdrop-blur-md backdrop-filter md:relative md:top-auto md:flex md:animate-none md:bg-none md:p-0 md:backdrop-filter-none ${showMenu}`}
+        className={
+          variant && variant === "mobile"
+            ? `absolute -top-2 right-0 z-10 mt-[60px] w-full origin-top animate-open-menu items-center justify-center gap-4 rounded-b-xl bg-menuBlackOverlay pb-6 font-medium text-gray-200 backdrop-blur-md backdrop-filter md:hidden ${showMenu}`
+            : `hidden h-6 items-center justify-center gap-6 text-white md:flex`
+        }
+        // className={`absolute -top-2 right-0 z-10 mt-[60px] w-full origin-top animate-open-menu items-center justify-center gap-4 rounded-b-xl bg-menuBlackOverlay pb-6 font-medium text-gray-200 backdrop-blur-md backdrop-filter md:relative md:top-auto md:flex md:animate-none md:bg-none md:p-0 md:backdrop-filter-none ${showMenu}`}
+        // className={`absolute -top-2 right-0 w-full origin-top animate-open-menu items-center justify-center gap-4 rounded-b-xl bg-menuBlackOverlay pb-6 pt-[60px] font-medium text-gray-200 md:relative md:top-auto md:flex md:animate-none md:bg-none md:p-0 md:backdrop-filter-none ${showMenu}`}
       >
         {navbarLinks.map((link: NavbarLinkT) => (
           <li
