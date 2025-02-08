@@ -63,6 +63,19 @@ export default {
           "900": "#34481f",
           "950": "#19270c",
         },
+        champagne: {
+          "50": "#fbf9f1",
+          "100": "#f6f0de",
+          "200": "#efe3c6",
+          "300": "#e0c791",
+          "400": "#d2a965",
+          "500": "#c99246",
+          "600": "#bb7d3b",
+          "700": "#9b6333",
+          "800": "#7d4f2f",
+          "900": "#654229",
+          "950": "#362114",
+        },
       },
       keyframes: {
         "open-menu": {
@@ -75,7 +88,7 @@ export default {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
       backgroundImage: {
-        heroBg: "url('/images/restaurant05.jpg')",
+        heroBg: "url('/images/hongo-borderless.svg')",
         heroBlackOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)",
         headerOverlay:
@@ -83,7 +96,7 @@ export default {
         menuBlackOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%)",
         whiteOverlay:
-          "linear-gradient(to bottom, rgba(239,227,198,0.95) 0%, rgba(239,227,198,0.95) 100%)",
+          "linear-gradient(to bottom, rgba(251,249,241,0.9) 0%, rgba(251,249,241,0.9) 100%)",
       },
     },
   },
