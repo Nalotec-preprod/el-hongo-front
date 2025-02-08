@@ -1,7 +1,5 @@
 import { getMenu } from "@/actions/menu"
-import DishCard from "@/components/main_site/pages/menu/dishCard"
 import DishCategorySection from "@/components/main_site/pages/menu/menuDishCategoryCard"
-import { yellowtail } from "@/components/ui/fonts"
 import { DishCategoryT } from "@/types/menu"
 
 export default function Blog() {
