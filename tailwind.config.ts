@@ -82,6 +82,8 @@ export default {
           "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%)",
         menuBlackOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%)",
+        whiteOverlay:
+          "linear-gradient(to bottom, rgba(239,227,198,0.95) 0%, rgba(239,227,198,0.95) 100%)",
       },
     },
   },
