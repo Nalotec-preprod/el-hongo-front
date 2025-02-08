@@ -54,7 +54,7 @@ export default function Menu() {
                     <img
                       src={`${dish.imageUrl}`}
                       alt="Sincronizadas"
-                      className="h-14 w-14 rounded-full object-cover object-center"
+                      className="h-14 w-14 shrink-0 rounded-full object-cover object-center"
                     />
 
                     {/* Descripcion */}
