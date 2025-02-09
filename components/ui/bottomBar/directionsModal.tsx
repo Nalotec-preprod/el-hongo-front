@@ -20,8 +20,9 @@ export default function DirectionsModal({
         <div className="flex items-center justify-center gap-8">
           <div className="flex flex-col items-center justify-center gap-2">
             <Link
-              href="#"
+              href={`https://www.google.com/maps/dir/?api=1&destination=${process.env.NEXT_PUBLIC_LOCATION_LAT},${process.env.NEXT_PUBLIC_LOCATION_LNG}`}
               className="flex h-16 w-16 items-center justify-center rounded-full border border-gray-300 bg-white shadow-lg"
+              target="_blank"
             >
               <img src="/images/google-map-icon.webp" alt="" className="h-10" />
             </Link>
@@ -30,8 +31,9 @@ export default function DirectionsModal({
 
           <div className="flex flex-col items-center justify-center gap-2">
             <Link
-              href="#"
+              href={`waze://?ll=${process.env.NEXT_PUBLIC_LOCATION_LAT},${process.env.NEXT_PUBLIC_LOCATION_LNG}&navigate=ye`}
               className="flex h-16 w-16 items-center justify-center rounded-full border border-gray-300 bg-white shadow-lg"
+              target="_blank"
             >
               <img src="/images/waze-icon-2.png" alt="" className="h-10" />
             </Link>
