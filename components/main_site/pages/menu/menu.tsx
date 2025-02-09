@@ -28,8 +28,7 @@ export default function Menu() {
        *   Main content
        * --------------------------------------
        */}
-
-      <div className="mx-auto mt-10 w-fit px-4">
+      <div className="mx-auto mt-10 w-fit px-4 xl:max-w-[1200px]">
         <div className="space-y-8">
           {/*
            * ---------------------------------------

@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils"
+import { StylesT } from "@/types/ui"
 import Link from "next/link"
 
 type DirectionsLinkT = {
@@ -7,7 +9,7 @@ type DirectionsLinkT = {
   href: string
 }
 
-export default function DirectionsGPS() {
+export default function DirectionsGPS({ className }: StylesT) {
   const directionLink: DirectionsLinkT[] = [
     {
       name: "GoogleMaps",
@@ -24,7 +26,12 @@ export default function DirectionsGPS() {
   ]
 
   return (
-    <div className="flex flex-col items-center justify-center gap-1 pb-6 text-sm font-semibold text-gray-200">
+    <div
+      className={cn(
+        "flex flex-col items-center justify-center gap-1 pb-6 text-sm font-semibold text-gray-200",
+        className,
+      )}
+    >
       <p className="text-lg">¿C&oacute;mo llegar?</p>
       <div className="flex items-center justify-center gap-4">
         {directionLink.map((link) => (
