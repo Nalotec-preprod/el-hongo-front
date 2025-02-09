@@ -6,6 +6,9 @@ export default function DirectionsModal({
   isVisible,
   closeFn,
 }: ModalWindowProps) {
+  const lat = process.env.NEXT_PUBLIC_LOCATION_LAT
+  const lng = process.env.NEXT_PUBLIC_LOCATION_LNG
+
   return (
     <ModalWindow isVisible={isVisible} closeFn={closeFn}>
       <h2 className="text-center text-xl font-semibold">Direcci&oacute;n</h2>
@@ -20,9 +23,8 @@ export default function DirectionsModal({
         <div className="flex items-center justify-center gap-8">
           <div className="flex flex-col items-center justify-center gap-2">
             <Link
-              href={`https://www.google.com/maps/dir/?api=1&destination=${process.env.NEXT_PUBLIC_LOCATION_LAT},${process.env.NEXT_PUBLIC_LOCATION_LNG}`}
+              href={`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`}
               className="flex h-16 w-16 items-center justify-center rounded-full border border-gray-300 bg-white shadow-lg"
-              target="_blank"
             >
               <img src="/images/google-map-icon.webp" alt="" className="h-10" />
             </Link>
@@ -31,9 +33,8 @@ export default function DirectionsModal({
 
           <div className="flex flex-col items-center justify-center gap-2">
             <Link
-              href={`waze://?ll=${process.env.NEXT_PUBLIC_LOCATION_LAT},${process.env.NEXT_PUBLIC_LOCATION_LNG}&navigate=ye`}
+              href={`waze://?ll=${lat},${lng}&navigate=yes`}
               className="flex h-16 w-16 items-center justify-center rounded-full border border-gray-300 bg-white shadow-lg"
-              target="_blank"
             >
               <img src="/images/waze-icon-2.png" alt="" className="h-10" />
             </Link>
