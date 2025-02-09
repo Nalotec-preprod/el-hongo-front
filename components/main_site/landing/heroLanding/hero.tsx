@@ -1,8 +1,7 @@
 import HeroFullScreenCarousel from "@/components/ui/hero/heroFullScreenCarousel"
-import DirectionsGPS from "./directions"
-import HorariosDeAtencion from "./horarios"
 import { getHeroImagesLandingPage } from "@/actions/hero"
 import HeroContent from "./heroContent"
+import BottomBar from "@/components/ui/bottomBar/bottomBar"
 
 export default function Hero() {
   const heroBgImages = getHeroImagesLandingPage()
@@ -14,13 +13,14 @@ export default function Hero() {
        *  Hero full screen
        * ----------------------------------
        */}
-      <HeroFullScreenCarousel bgImages={heroBgImages}>
-        <div className="relative flex h-full w-full flex-col items-center justify-between pt-[70px] md:pt-[100px]">
-          <HorariosDeAtencion className="absolute top-[70px] md:top-[100px]" />
-          <HeroContent className="absolute top-2/4 -translate-y-2/4 pt-4" />
-          <DirectionsGPS className="absolute bottom-6" />
-        </div>
-      </HeroFullScreenCarousel>
+      <div className="relative h-screen w-full">
+        <HeroFullScreenCarousel bgImages={heroBgImages}>
+          <div className="flex h-full w-full flex-col items-center justify-between pt-[70px] md:pt-[100px]">
+            <HeroContent className="absolute top-2/4 -translate-y-2/4 pt-4" />
+          </div>
+        </HeroFullScreenCarousel>
+        <BottomBar />
+      </div>
 
       {/*
        * ----------------------------------

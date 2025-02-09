@@ -19,10 +19,6 @@ export const getHeroImagesLandingPage = () => {
       bgImageUrl: "/images/restaurant04.jpg",
     },
     {
-      name: "cinco",
-      bgImageUrl: "/images/hongo-borderless.svg",
-    },
-    {
       name: "seis",
       bgImageUrl: "/images/hongo_panoramico_02.webp",
     },

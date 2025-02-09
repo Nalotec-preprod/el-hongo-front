@@ -135,13 +135,13 @@ export default {
       backgroundImage: {
         heroBg: "url('/images/hongo-borderless.svg')",
         heroBlackOverlay:
-          "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%)",
+          "linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%)",
         headerOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%)",
         menuBlackOverlay:
           "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%)",
         whiteOverlay:
-          "linear-gradient(to bottom, rgba(251,249,241,0.9) 0%, rgba(251,249,241,0.9) 100%)",
+          "linear-gradient(to bottom, rgba(251,249,241,0.5) 0%, rgba(251,249,241,0.5) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",

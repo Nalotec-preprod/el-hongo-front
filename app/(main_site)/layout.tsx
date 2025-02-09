@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import "../../globals.css"
+import "../globals.css"
 import Header from "@/components/main_site/header/header"
 import { poppins } from "@/components/ui/fonts"
 
@@ -17,7 +17,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
         <Header />
-        {/*<main className="mt-[52px] md:mt-[96px]">{children}</main>*/}
         <main className="">{children}</main>
       </body>
     </html>
