@@ -142,6 +142,8 @@ export default {
           "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%)",
         whiteOverlay:
           "linear-gradient(to bottom, rgba(251,249,241,0.5) 0%, rgba(251,249,241,0.5) 100%)",
+        whiteModalOverlay:
+          "linear-gradient(to bottom, rgba(251,249,241,0.93) 0%, rgba(251,249,241,0.93) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",

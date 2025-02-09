@@ -37,7 +37,7 @@ export default function DishCategorySection({
        *  Listado de platos
        * ---------------------------------------
        */}
-      <div className="md:grid md:grid-cols-2 md:gap-8">
+      <div className="space-y-6 md:grid md:grid-cols-2 md:gap-8 md:space-y-0">
         {category.dishes.map((dish) => (
           <DishCard key={dish.name} dish={dish} />
         ))}

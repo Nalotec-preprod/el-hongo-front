@@ -28,7 +28,20 @@ export const getMenu = () => {
             description:
               "Tortilla crocante bañada en salsa roja o verde con huevo",
             imageUrl: "/images/chilaquiles.jpg",
-            price: 120,
+            priceVariants: [
+              {
+                description: "Con huevo: ",
+                price: 95,
+              },
+              {
+                description: "Con pollo: ",
+                price: 110,
+              },
+              {
+                description: "Con pollo y huevo: ",
+                price: 120,
+              },
+            ],
           },
           {
             name: "Picaditas",
