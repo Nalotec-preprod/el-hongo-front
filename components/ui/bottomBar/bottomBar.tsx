@@ -13,7 +13,7 @@ export default function BottomBar() {
 
   return (
     <div>
-      <div className="fixed bottom-2 right-2/4 z-10 w-fit translate-x-2/4 overflow-hidden rounded-lg border border-gray-300 bg-whiteOverlay shadow-lg">
+      <div className="fixed bottom-2 right-2/4 z-10 w-fit translate-x-2/4 overflow-hidden rounded-full border border-gray-300 bg-whiteOverlay shadow-lg">
         <div className="flex h-full w-full items-center justify-center px-4 text-blue-600 backdrop-blur-md backdrop-filter">
           <button
             type="button"
