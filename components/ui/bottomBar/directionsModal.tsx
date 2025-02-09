@@ -1,5 +1,5 @@
 import { ModalWindowProps } from "@/types/ui"
-import ModalWindow from "../modalWindow"
+import ModalWindow from "../modals/modalWindow"
 import Link from "next/link"
 
 export default function DirectionsModal({

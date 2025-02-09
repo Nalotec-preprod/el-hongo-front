@@ -1,6 +1,12 @@
+"use client"
+
+import ModalImage from "@/components/ui/modals/modalImage"
 import { DishT } from "@/types/menu"
+import { useState } from "react"
 
 export default function DishCard({ dish }: { dish: DishT }) {
+  const [showImage, setShowImage] = useState(false)
+
   return (
     <div
       key={dish.name}
@@ -12,18 +18,19 @@ export default function DishCard({ dish }: { dish: DishT }) {
           src={`${dish.imageUrl}`}
           alt="Sincronizadas"
           className="h-14 w-14 shrink-0 rounded-full object-cover object-center shadow-lg md:h-24 md:w-24"
+          onClick={() => setShowImage(true)}
         />
       </div>
 
       {/* Descripcion */}
-      <div className="w-full space-y-2 text-sm md:text-base">
-        <div className="w-full space-y-2">
-          <div className="flex w-full justify-between gap-2 font-medium">
+      <div className="w-full text-sm md:text-base">
+        <div className="w-full">
+          <div className="flex w-full justify-between font-medium">
             <p className="shrink-0 text-base font-semibold text-hongo-rustynail-800 md:text-lg">
               {dish.name}
             </p>
           </div>
-          <div className="space-y-1 text-xs md:text-sm">
+          <div className="text-xs md:text-sm">
             <p>{dish.description}</p>
             <p className="font-semibold text-hongo-rustynail-700">
               {dish.subtitle}
@@ -33,7 +40,7 @@ export default function DishCard({ dish }: { dish: DishT }) {
 
         {/* Precio */}
         {dish.priceVariants && (
-          <div className="text-xs font-semibold text-hongo-rustynail-900">
+          <div className="mt-3 text-xs font-semibold text-hongo-rustynail-900">
             {dish.priceVariants.map((variant) => (
               <p key={variant.description}>
                 {variant.description} ${variant.price} MXN
@@ -43,10 +50,18 @@ export default function DishCard({ dish }: { dish: DishT }) {
         )}
 
         {!dish.priceVariants && (
-          <p className="shrink-0 font-semibold text-hongo-rustynail-800">
+          <p className="mt-3 shrink-0 font-semibold text-hongo-rustynail-800">
             ${dish.price} MXN
           </p>
         )}
+
+        {/* Image preview */}
+        <ModalImage
+          imageDescription=""
+          imageUrl={dish.imageUrl as string}
+          isVisible={showImage}
+          closeFn={setShowImage}
+        />
       </div>
     </div>
   )

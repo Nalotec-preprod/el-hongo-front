@@ -15,7 +15,8 @@ export default function Hero() {
        */}
       <div className="relative h-screen w-full">
         <HeroFullScreenCarousel bgImages={heroBgImages}>
-          <div className="flex h-full w-full flex-col items-center justify-between pt-[70px] md:pt-[100px]">
+          {/*<div className="flex h-full w-full flex-col items-center justify-between pt-[70px] md:pt-[100px]">*/}
+          <div className="flex h-full w-full flex-col items-center justify-between">
             <HeroContent className="absolute top-2/4 -translate-y-2/4 pt-4" />
           </div>
         </HeroFullScreenCarousel>

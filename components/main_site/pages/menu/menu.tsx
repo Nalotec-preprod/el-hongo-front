@@ -35,7 +35,7 @@ export default function Menu() {
            * Secciones del Menu
            * ---------------------------------------
            */}
-          <div className="space-y-8">
+          <div className="space-y-32">
             {menu.categoriesList.map((category) => (
               <DishCategorySection
                 key={category.category}
